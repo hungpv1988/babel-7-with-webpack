@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-export default class Dialog extends Components{
+
+export default class Dialog extends Component{
     render(){
         return(
             <div>
