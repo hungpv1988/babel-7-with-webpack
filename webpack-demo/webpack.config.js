@@ -35,6 +35,14 @@ module.exports={
                     loader: 'svg-inline-loader'
                 }
             }
+            ,  
+            {
+                test: /\.(png|jp(e*)g|svg)$/,
+                loaders: [
+                    'url-loader?limit=30000&name=fonts/[name].[ext]',
+                    'image-webpack-loader'
+                ]
+            }
         ]
     },
 
